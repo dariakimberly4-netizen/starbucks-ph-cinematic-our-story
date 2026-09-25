@@ -9,3 +9,16 @@ body{height:auto;min-height:1200vh}
  #film{height:100dvh}
  #world{perspective:650px}
 }
+
+/* REFERENCE-VIDEO CINEMATIC UPGRADE */
+#world{perspective:620px;transform-style:preserve-3d;overflow:visible}
+#beans,#ice{position:absolute;inset:0;transform-style:preserve-3d}
+.speedLines{position:absolute;inset:-35%;opacity:.16;background:repeating-conic-gradient(from 0deg at 50% 50%,transparent 0 4deg,#fff2 4.2deg 4.5deg,transparent 4.8deg 9deg);mask-image:radial-gradient(circle,transparent 0 8%,#000 35%,transparent 72%);filter:blur(1px);mix-blend-mode:screen;will-change:transform,opacity}
+.splash{position:absolute;left:50%;top:50%;width:105vmax;height:18vmax;margin:-9vmax -52.5vmax;border-radius:50%;opacity:0;filter:blur(4px) drop-shadow(0 20px 25px #0008);will-change:transform,opacity}
+.splashA{background:linear-gradient(90deg,transparent 4%,#241007 18%,#8c4924 43%,#d49358 50%,#54220f 64%,transparent 94%);clip-path:polygon(0 46%,9% 28%,19% 55%,29% 19%,40% 58%,51% 24%,63% 57%,76% 21%,88% 53%,100% 40%,100% 66%,86% 58%,75% 79%,61% 57%,48% 80%,35% 54%,22% 76%,10% 55%,0 67%)}
+.splashB{background:linear-gradient(90deg,transparent,#fff5dd 17%,#d9c4a3 43%,#fffaf0 58%,#bba383 75%,transparent);clip-path:polygon(0 55%,10% 31%,20% 62%,31% 24%,44% 58%,55% 30%,68% 66%,80% 29%,91% 58%,100% 42%,100% 68%,89% 54%,78% 78%,66% 57%,53% 81%,42% 56%,29% 76%,17% 57%,0 72%)}
+.cameraFlash{position:absolute;inset:-20%;background:radial-gradient(circle at 50% 50%,#fff8,transparent 38%);opacity:0;pointer-events:none;mix-blend-mode:screen}
+.bean{box-shadow:inset -9px -11px 14px #000a,0 14px 30px #000c;backface-visibility:hidden}
+.heroBean{filter:drop-shadow(0 45px 55px #000d);backface-visibility:hidden}
+.ribbons{transform-style:preserve-3d}
+@media(max-width:700px){#world{perspective:470px}.splash{width:150vmax;margin-left:-75vmax}.speedLines{inset:-60%}}
