@@ -22,3 +22,10 @@ body{height:auto;min-height:1200vh}
 .heroBean{filter:drop-shadow(0 45px 55px #000d);backface-visibility:hidden}
 .ribbons{transform-style:preserve-3d}
 @media(max-width:700px){#world{perspective:470px}.splash{width:150vmax;margin-left:-75vmax}.speedLines{inset:-60%}}
+
+/* REAL FRAP HERO */
+.frapHero{position:absolute;left:50%;top:50%;width:min(72vw,520px);aspect-ratio:1/1;margin:0;transform:translate(-50%,-50%);z-index:5;will-change:transform,opacity;filter:drop-shadow(0 40px 55px #000b);overflow:hidden;border-radius:50%;clip-path:circle(46% at 50% 50%)}
+.frapHero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle,transparent 42%,#061611 76%);pointer-events:none}
+.frapHero img{width:100%;height:100%;object-fit:cover;object-position:22% 50%;transform:scale(1.42);display:block}
+.heroBean{z-index:7}.cup{z-index:8}
+@media(max-width:700px){.frapHero{width:92vw}.frapHero img{transform:scale(1.55);object-position:18% 50%}}
